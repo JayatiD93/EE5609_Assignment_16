@@ -223,33 +223,51 @@ To prove & $\vec{S}$ is an independent set\\
 & \\
 \hline
 & \\
-Linear Independency  & 1.$tr(\vec{M} + \vec{N})= tr(\vec{M}) +tr(\vec{N})$ \\
-& 2. $tr(c\vec{M}) = c(tr(\vec{M}))$\\
-& Where $\vec{M}$ and $\vec{N}$ are two \\
-& square matrices\\
+Linear &\\
+Independency  & Let $f_1$,$f_2$,...,$f_n$ are the\\
+& polynomials and they will be \\
+& linearly independent if\\
+& $a_1f_1+a_2f_2+...+a_nf_n=\theta$ \\
+& for $a_1=a_2=....=a_n=0$ \\
+& where $a_1$,$a_2$,...,$a_n$ are \\
+& scalars from field $F$\\
 & \\
 \hline
 & \\
-Proof & As $f_B(\vec{A})= tr(\vec{B}^t \vec{A})$\\
+Proof & Let the degrees of $f_1$,$f_2$,...,$f_n$ are\\
+& $d_1$,$d_2$,...,$d_n$ respectively such that\\
+& the degree of $f_i$ = $d_i \neq d_j$\\
+& for j=1,2,....,n and $i \neq j$\\
 & \\
-& $\implies f_B(c\vec{A_1} + \vec{A_2})$\\
-& $= tr(\vec{B}^t (c\vec{A_1} + \vec{A_2}))$\\
+& Now, let $a_1f_1+a_2f_2+...+a_nf_n=\theta$\\
+& and the the degree of $f_i$ = $d_i$ = $d$ \\
+& which is the largest degree among all\\
+& the polynomials and $f_i$ has the\\
+& co-efficient $a_i$\\
 & \\
-& $\implies f_B(c\vec{A_1} + \vec{A_2})= tr(c \vec{B}^t \vec{A_1})$\\
-& $+ tr(\vec{B}^t \vec{A_2})$\\
+& then if $a_1f_1+a_2f_2+...+a_nf_n=\theta$\\
+& and $d_i=d \neq d_j$ for j=1,2,....,n and\\
+& $i \neq j$\\
+& then it must be $a_i=0$\\
 & \\
-& $\implies f_B(c\vec{A_1} + \vec{A_2})= c (tr(\vec{B}^t \vec{A_1}))$\\
-& $+ tr(\vec{B}^t \vec{A_2})$\\
+& Now, consider the second largest degree $d_k$\\
+& and it is the degree of the polynomial $f_k$\\
+& $a_k$ is the coefficient of $f_k$\\
+& $d_k \neq d_j$ for j=1,2,....,n and\\
+& $k \neq j$, so similarly $a_k=0$\\
 & \\
-& $\implies f_B(c\vec{A_1} + \vec{A_2})$\\
-& $= c f_B(\vec{A_1}) + f_B(\vec{A_2})$\\
+& In this way, it can be proved that\\
+& $a_1=a_2=....=a_n=0$ for\\
+& $a_1f_1+a_2f_2+...+a_nf_n=\theta$\\
+& $\implies$ $f_1$,$f_2$,....,$f_n$ are\\
+& linearly independent\\
 & \\
 \hline
 \end{tabular}
 \end{center}
 \end{table}
 
-Hence, it can be said that $f_B$ is a linear functional on $V$.
+Hence, it is proved that $\vec{S}$ is an independent set in $\vec{F[x]}$.
 %\renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 %\numberwithin{equation}{enumi}
