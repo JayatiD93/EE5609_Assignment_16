@@ -248,22 +248,25 @@ Proof & Let the degrees of $f_1$,$f_2$,...,$f_n$ are\\
 & for j=1,2,....,n and $i \neq j$\\
 & and $d_1 < d_2 < ....< d_n$\\
 & so $d_n$ is the largest degree\\
-& \\
+\hline
 & Now, let $a_1f_1+a_2f_2+...+a_nf_n=\theta$\\
 & \\
 & where $f_1 = \sum_{i=0}^{d_1}k_{1i}x^i$\\
+& \\
 & $f_2 = \sum_{i=0}^{d_2}k_{2i}x^i$\\
 & $\textbf{or,}f_2 = \sum_{i=0}^{d_1}k_{2i}x^i+ \sum_{i=d_1+1}^{d_2}k_{2i}x^i$\\
 & \\
 & Similarly, $f_{n-1}=\sum_{i=0}^{d_{n-1}}k_{(n-1)i}x^i$\\
 & $\implies f_{n-1}= \sum_{i=0}^{d_{n-2}}k_{(n-1)i}x^i+ \sum_{i=d_{n-2}+1}^{d_{n-1}}k_{(n-1)i}x^i$\\
-& and $f_n = \sum_{i=0}^{d_{n-1}}k_{ni}x^i+ \sum_{i=d_{n-1}+1}^{d_{n}}k_{ni}x^i$\\
 & \\
+& and $f_n = \sum_{i=0}^{d_{n-1}}k_{ni}x^i+ \sum_{i=d_{n-1}+1}^{d_{n}}k_{ni}x^i$\\
+\hline
 & Now,\\
 & $a_1f_1+a_2f_2+...+a_nf_n$\\
 & $=a_1\sum_{i=0}^{d_1}k_{1i}x^i + a_2(\sum_{i=0}^{d_1}k_{2i}x^i+ \sum_{i=d_1+1}^{d_2}k_{2i}x^i)$\\
 & $+ ...+a_n(\sum_{i=0}^{d_1}k_{ni}x^i+ \sum_{i=d_1+1}^{d_2}k_{ni}x^i+..$\\
 & $..+\sum_{i=d_{n-1}+1}^{d_{n}}k_{ni}x^i)$\\
+& \\
 & $=\sum_{i=0}^{d_1}(a_1k_{1i}+a_2k_{2i}+..+a_nk_{ni})x^i$\\
 & $+\sum_{i=d_1+1}^{d_2}(a_2k_{2i}+..+a_nk_{ni})x^i$\\
 & $+..+\sum_{i=d_{n-1}+1}^{d_{n}}a_nk_{ni}x^i$\\
@@ -271,7 +274,7 @@ Proof & Let the degrees of $f_1$,$f_2$,...,$f_n$ are\\
 & Now, as $a_1f_1+a_2f_2+...+a_nf_n=\theta$ \\
 & for $d_{n-1}+1\leq i \leq d_n$, $k_{ni}\neq 0$\\
 & so $a_n$ must be 0\\
-& \\
+\hline
 & Now, discarding $a_n$ associated term, we get\\
 & $\sum_{i=0}^{d_1}(a_1k_{1i}+a_2k_{2i}+..+a_nk_{ni})x^i$\\
 & $+\sum_{i=d_1+1}^{d_2}(a_2k_{2i}+..+a_nk_{ni})x^i$\\
@@ -300,6 +303,7 @@ Proof & \\
 & $\implies a_2=0$ as $k_{2i} \neq 0$\\
 & $\implies \sum_{i=0}^{d_1}a_1k_{1i}x^i=0$\\
 & $\implies a_1=0$ as $k_{1i} \neq 0$\\
+\hline
 & In this way, it can be proved that\\
 & $a_1=a_2=....=a_{n-1}=a_n=0$ for\\
 & $a_1f_1+a_2f_2+...+a_nf_n=\theta$\\
